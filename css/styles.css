@@ -56,9 +56,47 @@ h1 {
   gap: 40px;
 }
 
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 32px;
+  background: #111;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.cta-button:hover {
+  background: #000;
+}
+
+
+.signup {
+  background: #f7f8fa;
+}
+
+.signup-container {
+  max-width: 560px;
+}
+
+.signup-intro {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+.privacy {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+
 footer {
   background: #111;
   color: #fff;
   text-align: center;
 }
+
 
