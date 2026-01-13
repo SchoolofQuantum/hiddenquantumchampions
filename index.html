@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://assets.brevo.com" crossorigin>
   <link rel="dns-prefetch" href="https://sibforms.com">
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preload" as="image" href="/assets/BgStatic.avif" imagesrcset="/assets/BgStatic.avif" imagesizes="(max-width:720px) 100vw, 1200px">
 
   <!-- Analytics placeholder -->
 
@@ -68,28 +69,41 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container">
-      <h1>
-        Quantum & Emerging Technologies Market Intelligence for Investors and Strategic Decision-Makers
-      </h1>
 
-      <p class="subheadline">
-        A structured program for those allocating capital or setting strategy in quantum computing, communication, sensing, and adjacent emerging technologies.
-      </p>
+    <picture class="hero-picture" aria-hidden="true">
+      <source type="image/avif" srcset="assets/BgStatic.avif" sizes="(max-width:720px) 100vw, 1200px">
+      <source type="image/webp" srcset="assets/BgStatic.webp" sizes="(max-width:720px) 100vw, 1200px">
+      <img src="assets/BgStatic.jpg" alt="" class="hero-img" loading="eager" width="1600" height="900">
+    </picture>
 
-      <ul class="benefits">
-        <li>Where serious investment momentum is forming</li>
-        <li>Which industries are affected first</li>
-        <li>What executives should monitor now — and what can wait</li>
-        <li>No technical background required</li>
-      </ul>
 
-      <a href="#signup" class="cta-button">
-        Pre-Register for the Executive Briefing
-      </a>
-      <p>
-        Pre-registration includes access to a private market briefing and priority access to the first cohort.
-      </p>
+    <!-- Overlay to guarantee contrast (tune via CSS variable) -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-text-panel">
+        <h1>
+          Quantum & Emerging Technologies Market Intelligence for Investors and Strategic Decision-Makers
+        </h1>
+
+        <p class="subheadline">
+          A structured program for those allocating capital or setting strategy in quantum computing, communication, sensing, and adjacent emerging technologies.
+        </p>
+
+        <ul class="benefits">
+          <li>Where serious investment momentum is forming</li>
+          <li>Which industries are affected first</li>
+          <li>What executives should monitor now — and what can wait</li>
+          <li>No technical background required</li>
+        </ul>
+
+        <a href="#signup" class="cta-button">
+          Pre-Register for the Executive Briefing
+        </a>
+        <p>
+          Pre-registration includes access to a private market briefing and priority access to the first cohort.
+        </p>
+      </div>
     </div>
   </section>
 
